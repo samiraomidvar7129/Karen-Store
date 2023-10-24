@@ -1,20 +1,30 @@
 @import './_Navbar.css';
+@import './_Utilities.css';
 
 
 
 
-
+:root{
+    --green:green;
+    --black:
+}
 
 
 
 /* Scc Reset--------------------------------- */
 
 
-body,*,::before,::after{
+*,::before,::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-weight: 400;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+html,body{
+    scroll-behavior: smooth;
 }
 ol,ul,li{
     list-style: none;

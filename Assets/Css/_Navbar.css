@@ -1,16 +1,64 @@
 #header-navbar{
     width: 100%;
     height: 100vh;
-    background-image: url('../Imgs/banner/header-img-1.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color: #C2D9FF;
     padding:0 5% 0 5%;
     box-sizing: border-box;
 }
 .navbar{
     width: 100%;
     height: 10vh;
+    background-color: #fff;
 }
-.cart-icon{
+.logo-wrapper{
+    width: 70px;
+    height:100%;
+}
+.cart-icon,.fa-search,
+.fa-bars{
     cursor: pointer;
+    color: #e138cd;
+}
+.navbar-ul li a:hover{
+    background: linear-gradient(45deg,#87adfe,#ff77cd);
+   box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+}
+.header-content-wrapper{
+    width: 100%;
+    height: 400px;
+    margin-top:10px;
+}
+.header-content_itemRight {
+    width: 100%;
+    height: 100%;
+}
+.header-content_itemLeft{
+    width: 100%;
+    height: 100%;
+}
+.Collection-btn{
+   display:inline-block;
+   background: linear-gradient(45deg,#87adfe,#ff77cd);
+   box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+}
+.content_itemLeft_img{
+    width: 90%;
+    height: 100%;
+}
+.content_itemLeft_socials{
+    width: 10%;
+    height: 100%;
+}
+.itemLeft_socials_list{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -75px;;
+    bottom:180px;
+}
+.social-links{
+   margin-left: 10px;
+   /* color: #6a7199; */
+   background: linear-gradient(45deg,#87adfe,#ff77cd);
+   padding: 4px;
+   border-radius: 3px;
 }
