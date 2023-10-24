@@ -1,0 +1,13 @@
+@import './style.css';
+
+.container-dishes-item{
+    width: 200px;
+    height: 300px;
+    box-shadow: var(--box-shadow);
+}
+.dishes-item_img{
+    width: 150px;
+    height: 150px;
+    /* border: 1px solid silver */
+    
+}

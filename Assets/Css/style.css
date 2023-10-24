@@ -1,12 +1,16 @@
 @import './_Navbar.css';
 @import './_Utilities.css';
+@import './_Product-Section.css';
+@import './_Media-query.css';
 
 
 
 
 :root{
-    --green:green;
-    --black:
+    --green:#27ae60;
+    --black:#192a56;
+    --light:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 
 
@@ -40,3 +44,7 @@ img{
     width: 100%;
     height: 100%;
 }
+.current{
+    background: linear-gradient(45deg,#87adfe,#ff77cd);
+}
+
