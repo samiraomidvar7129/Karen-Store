@@ -1,13 +1,18 @@
-@import './style.css';
 
+.container-dishes {
+    width: 100%;
+    height: auto;
+}
 .container-dishes-item{
-    width: 200px;
-    height: 300px;
-    box-shadow: var(--box-shadow);
+    height: auto;
+    display: flex;
+    flex-basis: 180px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
 }
 .dishes-item_img{
     width: 150px;
     height: 150px;
-    /* border: 1px solid silver */
-    
 }

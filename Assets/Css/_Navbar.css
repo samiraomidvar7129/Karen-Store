@@ -4,6 +4,7 @@
     background-color: #C2D9FF;
     padding:0 5% 0 5%;
     box-sizing: border-box;
+    overflow: hidden;
 }
 .navbar{
     width: 100%;

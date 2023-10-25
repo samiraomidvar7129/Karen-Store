@@ -7,3 +7,15 @@
 .font-15{
     font-size: 15px;
 }
+.custom-shadow{
+    box-shadow: 0 .5rem 1.5rem rgba(218, 42, 42, 0.1);;
+}
+.bg-blueSky{
+    background-color: #9eb7e0;
+}
+.bg-purple{
+    color:#e138cd;
+}
+.custom-shadow{
+    box-shadow: 1px 1px 5px 3px  silver;
+}

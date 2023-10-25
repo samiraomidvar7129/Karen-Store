@@ -1,6 +1,7 @@
-@import './_Navbar.css';
 @import './_Utilities.css';
+@import './_Navbar.css';
 @import './_Product-Section.css';
+@import './_Review-Section.css';
 @import './_Media-query.css';
 
 
