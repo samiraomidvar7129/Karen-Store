@@ -19,3 +19,12 @@
 .custom-shadow{
     box-shadow: 1px 1px 5px 3px  silver;
 }
+.color-greenYellow{
+    color: rgb(135, 207, 27);
+}
+.color-gold{
+    color: goldenrod;
+}
+.text-right{
+    text-align: right;
+}

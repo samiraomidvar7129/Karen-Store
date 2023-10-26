@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./Assets/Libs/bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <!-- Import FontAwesome File -->
     <link rel="stylesheet" href="./Assets/Libs/fontawesome-pro-5.15.3-web/css/all.min.css">
+    <!-- Import Swiper.js CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <!-- Custom Style.css File link -->
     <link rel="stylesheet" href="./Assets/Css/style.css">
 </head>
@@ -79,8 +81,9 @@
                 <section class="dishes d-flex flex-column justify-content-center align-items-center" id="dishes">
                     <h3 class="mt-5">محصولات ما</h3>
                     <h5 class="mt-3">تمامی محصولات</h4>
-                    <div class="container-dishes mt-5 p-5 d-flex flex-wrap justify-content-center align-items-center custom-shadow">
-                        <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow">
+                    <div class="container-dishes mt-5 p-5 d-flex flex-wrap justify-content-around align-items-center custom-shadow">
+                        <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow
+                        d-flex flex-column justify-content-around align-items-center">
                            <div class="rating w-100 d-flex  justify-content-around align-items-center ">
                             <span><a href="" class="far fa-heart bg-purple"></a></span>
                             <span><a href="" class="far fa-eye bg-purple"></a></span>
@@ -96,207 +99,157 @@
                                 <i class="far fa-star"></i>
                                 <i class="far fa-star-half-alt"></i>
                              </div>
-                             <div class="product-price mt-4 ">
-                                <span class="text-success">45,000,000</span>
-                                <span class="text-danger">تومان</span>
+                             <div class="product-price mt-4 d-flex flex-column justify-content-center align-items-center ">
+                                <span class="text-success ">۴۵,۰۰۰,۰۰۰<span  class="text-danger px-2">تومان</span></span>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <span class="font-12 mx-2 color-greenYellow">۸۶٪<span class="text-dark px-2 ">رضایت</span> </span>
+                                    <span class="font-12 color-gold">۳۰۵<span class="text-dark px-2 ">فروش</span> </span>
+                                </div>
                              </div>
                              <div class="add-cart p-2 mt-4 w-75  text-center bg-blueSky">
                                 <a href="" class="text-white" >افزودن به سبد</a>
                              </div>
                         </div>
-                        <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow">
-                            <div class="rating w-100 d-flex  justify-content-around align-items-center ">
-                             <span><a href="" class="far fa-heart bg-purple"></a></span>
-                             <span><a href="" class="far fa-eye bg-purple"></a></span>
-                            </div>
-                              <div class="dishes-item_img mt-2">
-                                 <img src="./Assets/Imgs/posts/img-2.jpg" alt="">
-                                 <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
-                              </div>
-                              <div class="stars mt-5">
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star-half-alt"></i>
-                              </div>
-                              <div class="product-price mt-4 ">
-                                 <span class="text-success">45,000,000</span>
-                                 <span class="text-danger">تومان</span>
-                              </div>
-                              <div class="add-cart p-2 mt-4 w-75  text-center bg-blueSky">
-                                 <a href="" class="text-white" >افزودن به سبد</a>
-                              </div>
-                         </div>
-                         <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow">
-                            <div class="rating w-100 d-flex  justify-content-around align-items-center ">
-                             <span><a href="" class="far fa-heart bg-purple"></a></span>
-                             <span><a href="" class="far fa-eye bg-purple"></a></span>
-                            </div>
-                              <div class="dishes-item_img mt-2">
-                                 <img src="./Assets/Imgs/posts/img-4.jpg" alt="">
-                                 <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
-                              </div>
-                              <div class="stars mt-5">
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star-half-alt"></i>
-                              </div>
-                              <div class="product-price mt-4 ">
-                                 <span class="text-success">45,000,000</span>
-                                 <span class="text-danger">تومان</span>
-                              </div>
-                              <div class="add-cart p-2 mt-4 w-75  text-center bg-blueSky">
-                                 <a href="" class="text-white" >افزودن به سبد</a>
-                              </div>
-                         </div>
-                         <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow">
-                            <div class="rating w-100 d-flex  justify-content-around align-items-center ">
-                             <span><a href="" class="far fa-heart bg-purple"></a></span>
-                             <span><a href="" class="far fa-eye bg-purple"></a></span>
-                            </div>
-                              <div class="dishes-item_img mt-2">
-                                 <img src="./Assets/Imgs/posts/img-5.jpg" alt="">
-                                 <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
-                              </div>
-                              <div class="stars mt-5">
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star-half-alt"></i>
-                              </div>
-                              <div class="product-price mt-4 ">
-                                 <span class="text-success">45,000,000</span>
-                                 <span class="text-danger">تومان</span>
-                              </div>
-                              <div class="add-cart p-2 mt-4 w-75  text-center bg-blueSky">
-                                 <a href="" class="text-white" >افزودن به سبد</a>
-                              </div>
-                         </div>
-                         <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow">
-                            <div class="rating w-100 d-flex  justify-content-around align-items-center ">
-                             <span><a href="" class="far fa-heart bg-purple"></a></span>
-                             <span><a href="" class="far fa-eye bg-purple"></a></span>
-                            </div>
-                              <div class="dishes-item_img mt-2">
-                                 <img src="./Assets/Imgs/posts/img-6.jpg" alt="">
-                                 <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
-                              </div>
-                              <div class="stars mt-5">
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star-half-alt"></i>
-                              </div>
-                              <div class="product-price mt-4 ">
-                                 <span class="text-success">45,000,000</span>
-                                 <span class="text-danger">تومان</span>
-                              </div>
-                              <div class="add-cart p-2 mt-4 w-75  text-center bg-blueSky">
-                                 <a href="" class="text-white" >افزودن به سبد</a>
-                              </div>
-                         </div>
-                         <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow">
-                            <div class="rating w-100 d-flex  justify-content-around align-items-center ">
-                             <span><a href="" class="far fa-heart bg-purple"></a></span>
-                             <span><a href="" class="far fa-eye bg-purple"></a></span>
-                            </div>
-                              <div class="dishes-item_img mt-2">
-                                 <img src="./Assets/Imgs/posts/img-7.jpg" alt="">
-                                 <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
-                              </div>
-                              <div class="stars mt-5">
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star-half-alt"></i>
-                              </div>
-                              <div class="product-price mt-4 ">
-                                 <span class="text-success">45,000,000</span>
-                                 <span class="text-danger">تومان</span>
-                              </div>
-                              <div class="add-cart p-2 mt-4 w-75  text-center bg-blueSky">
-                                 <a href="" class="text-white" >افزودن به سبد</a>
-                              </div>
-                         </div>
-                         <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow">
-                            <div class="rating w-100 d-flex  justify-content-around align-items-center ">
-                             <span><a href="" class="far fa-heart bg-purple"></a></span>
-                             <span><a href="" class="far fa-eye bg-purple"></a></span>
-                            </div>
-                              <div class="dishes-item_img mt-2">
-                                 <img src="./Assets/Imgs/posts/img-8.jpg" alt="">
-                                 <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
-                              </div>
-                              <div class="stars mt-5">
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star-half-alt"></i>
-                              </div>
-                              <div class="product-price mt-4 ">
-                                 <span class="text-success">45,000,000</span>
-                                 <span class="text-danger">تومان</span>
-                              </div>
-                              <div class="add-cart p-2 mt-4 w-75  text-center bg-blueSky">
-                                 <a href="" class="text-white" >افزودن به سبد</a>
-                              </div>
-                         </div>
-                         <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow">
-                            <div class="rating w-100 d-flex  justify-content-around align-items-center ">
-                             <span><a href="" class="far fa-heart bg-purple"></a></span>
-                             <span><a href="" class="far fa-eye bg-purple"></a></span>
-                            </div>
-                              <div class="dishes-item_img mt-2">
-                                 <img src="./Assets/Imgs/posts/img-9.jpg" alt="">
-                                 <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
-                              </div>
-                              <div class="stars mt-5">
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star-half-alt"></i>
-                              </div>
-                              <div class="product-price mt-4 ">
-                                 <span class="text-success">45,000,000</span>
-                                 <span class="text-danger">تومان</span>
-                              </div>
-                              <div class="add-cart p-2 mt-4 w-75  text-center bg-blueSky">
-                                 <a href="" class="text-white" >افزودن به سبد</a>
-                              </div>
-                         </div>
-                         <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow">
-                            <div class="rating w-100 d-flex  justify-content-around align-items-center ">
-                             <span><a href="" class="far fa-heart bg-purple"></a></span>
-                             <span><a href="" class="far fa-eye bg-purple"></a></span>
-                            </div>
-                              <div class="dishes-item_img mt-2">
-                                 <img src="./Assets/Imgs/posts/img-10.jpg" alt="">
-                                 <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
-                              </div>
-                              <div class="stars mt-5">
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star"></i>
-                                 <i class="far fa-star-half-alt"></i>
-                              </div>
-                              <div class="product-price mt-4 ">
-                                 <span class="text-success">45,000,000</span>
-                                 <span class="text-danger">تومان</span>
-                              </div>
-                              <div class="add-cart p-2 mt-4 w-75  text-center bg-blueSky">
-                                 <a href="" class="text-white" >افزودن به سبد</a>
-                              </div>
-                         </div>
-                       
+                        <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow
+                        d-flex flex-column justify-content-around align-items-center">
+                           <div class="rating w-100 d-flex  justify-content-around align-items-center ">
+                            <span><a href="" class="far fa-heart bg-purple"></a></span>
+                            <span><a href="" class="far fa-eye bg-purple"></a></span>
+                           </div>
+                             <div class="dishes-item_img mt-2">
+                                <img src="./Assets/Imgs/posts/img-1.jpg" alt="">
+                                <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
+                             </div>
+                             <div class="stars mt-5">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star-half-alt"></i>
+                             </div>
+                             <div class="product-price mt-4 d-flex flex-column justify-content-center align-items-center ">
+                                <span class="text-success ">۴۵,۰۰۰,۰۰۰<span  class="text-danger px-2">تومان</span></span>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <span class="font-12 mx-2 color-greenYellow">۸۶٪<span class="text-dark px-2 ">رضایت</span> </span>
+                                    <span class="font-12 color-gold">۳۰۵<span class="text-dark px-2 ">فروش</span> </span>
+                                </div>
+                             </div>
+                             <div class="add-cart p-2 mt-4 w-75  text-center bg-blueSky">
+                                <a href="" class="text-white" >افزودن به سبد</a>
+                             </div>
+                        </div>
+                        <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow
+                        d-flex flex-column justify-content-around align-items-center">
+                           <div class="rating w-100 d-flex  justify-content-around align-items-center ">
+                            <span><a href="" class="far fa-heart bg-purple"></a></span>
+                            <span><a href="" class="far fa-eye bg-purple"></a></span>
+                           </div>
+                             <div class="dishes-item_img mt-2">
+                                <img src="./Assets/Imgs/posts/img-1.jpg" alt="">
+                                <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
+                             </div>
+                             <div class="stars mt-5">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star-half-alt"></i>
+                             </div>
+                             <div class="product-price mt-4 d-flex flex-column justify-content-center align-items-center ">
+                                <span class="text-success ">۴۵,۰۰۰,۰۰۰<span  class="text-danger px-2">تومان</span></span>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <span class="font-12 mx-2 color-greenYellow">۸۶٪<span class="text-dark px-2 ">رضایت</span> </span>
+                                    <span class="font-12 color-gold">۳۰۵<span class="text-dark px-2 ">فروش</span> </span>
+                                </div>
+                             </div>
+                             <div class="add-cart p-2 mt-4 w-75  text-center bg-blueSky">
+                                <a href="" class="text-white" >افزودن به سبد</a>
+                             </div>
+                        </div>
+                        <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow
+                        d-flex flex-column justify-content-around align-items-center">
+                           <div class="rating w-100 d-flex  justify-content-around align-items-center ">
+                            <span><a href="" class="far fa-heart bg-purple"></a></span>
+                            <span><a href="" class="far fa-eye bg-purple"></a></span>
+                           </div>
+                             <div class="dishes-item_img mt-2">
+                                <img src="./Assets/Imgs/posts/img-1.jpg" alt="">
+                                <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
+                             </div>
+                             <div class="stars mt-5">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star-half-alt"></i>
+                             </div>
+                             <div class="product-price mt-4 d-flex flex-column justify-content-center align-items-center ">
+                                <span class="text-success ">۴۵,۰۰۰,۰۰۰<span  class="text-danger px-2">تومان</span></span>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <span class="font-12 mx-2 color-greenYellow">۸۶٪<span class="text-dark px-2 ">رضایت</span> </span>
+                                    <span class="font-12 color-gold">۳۰۵<span class="text-dark px-2 ">فروش</span> </span>
+                                </div>
+                             </div>
+                             <div class="add-cart p-2 mt-4 w-75  text-center bg-blueSky">
+                                <a href="" class="text-white" >افزودن به سبد</a>
+                             </div>
+                        </div>
+                        <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow
+                        d-flex flex-column justify-content-around align-items-center">
+                           <div class="rating w-100 d-flex  justify-content-around align-items-center ">
+                            <span><a href="" class="far fa-heart bg-purple"></a></span>
+                            <span><a href="" class="far fa-eye bg-purple"></a></span>
+                           </div>
+                             <div class="dishes-item_img mt-2">
+                                <img src="./Assets/Imgs/posts/img-1.jpg" alt="">
+                                <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
+                             </div>
+                             <div class="stars mt-5">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star-half-alt"></i>
+                             </div>
+                             <div class="product-price mt-4 d-flex flex-column justify-content-center align-items-center ">
+                                <span class="text-success ">۴۵,۰۰۰,۰۰۰<span  class="text-danger px-2">تومان</span></span>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <span class="font-12 mx-2 color-greenYellow">۸۶٪<span class="text-dark px-2 ">رضایت</span> </span>
+                                    <span class="font-12 color-gold">۳۰۵<span class="text-dark px-2 ">فروش</span> </span>
+                                </div>
+                             </div>
+                             <div class="add-cart p-2 mt-4 w-75  text-center bg-blueSky">
+                                <a href="" class="text-white" >افزودن به سبد</a>
+                             </div>
+                        </div>
+                        <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow
+                        d-flex flex-column justify-content-around align-items-center">
+                           <div class="rating w-100 d-flex  justify-content-around align-items-center ">
+                            <span><a href="" class="far fa-heart bg-purple"></a></span>
+                            <span><a href="" class="far fa-eye bg-purple"></a></span>
+                           </div>
+                             <div class="dishes-item_img mt-2">
+                                <img src="./Assets/Imgs/posts/img-1.jpg" alt="">
+                                <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
+                             </div>
+                             <div class="stars mt-5">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star-half-alt"></i>
+                             </div>
+                             <div class="product-price mt-4 d-flex flex-column justify-content-center align-items-center ">
+                                <span class="text-success ">۴۵,۰۰۰,۰۰۰<span  class="text-danger px-2">تومان</span></span>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <span class="font-12 mx-2 color-greenYellow">۸۶٪<span class="text-dark px-2 ">رضایت</span> </span>
+                                    <span class="font-12 color-gold">۳۰۵<span class="text-dark px-2 ">فروش</span> </span>
+                                </div>
+                             </div>
+                             <div class="add-cart p-2 mt-4 w-75  text-center bg-blueSky">
+                                <a href="" class="text-white" >افزودن به سبد</a>
+                             </div>
+                        </div>    
                     </div>
                 </section>
             </div>
@@ -305,37 +258,227 @@
      </div>
      <!-- END Product-Section -->
      <!-- Start Review-Section -->
-     <div class="container mt-3 mb-3">
+     <div class="container ">
         <div class="row">
             <div class="col">
-                <section class="review-wrapper" id="review-wrapper">
-                 <h4>مشتریان ما چه میگویند؟</h4>
-                 <section class="review-slider">
-                    <div class="wrapper-slider">
-                        <div class="slide-item">
-                            <i class="far fa-quote-right"></i>
-                            <div class="user-item w-25">
-                                <img src="./Assets/Imgs/person/person-1.jpg" alt="person">
-                                <div class="user-info">
-                                    <h3></h3>
-                                    <div class="stars mt-5">
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                     </div>
-                                </div>
-                            </div>
-                            <p>حس خوب و عالی خرید در فروشگاه اینترنتی کارن راتجربه کردم</p>
-                        </div>
+                <div class="swiper mySwiper mt-5">
+                    <h4 class="text-center mt-3 mb-1">مشتریان ما چه میگویند؟</h4>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                        <section class="review-wrapper mt-5 mb-5" id="review-wrapper">
+                            <section class="review-slider p-4 border border-2">
+                               <div class="wrapper-slider">
+                                   <div class="slide-item">
+                                       <i class="far fa-quote-right"></i>
+                                       <div class="user-item w-25">
+                                           <img src="./Assets/Imgs/person/person-1.jpg" alt="person">
+                                           <div class="user-info">
+                                               <h6>نازنین سلیمانی</h6>
+                                               <div class="stars mt-4 d-flex flex-nowrap justify-content-center align-items-center">
+                                                   <i class="far fa-star star-icon"></i>
+                                                   <i class="far fa-star star-icon"></i>
+                                                   <i class="far fa-star star-icon"></i>
+                                                   <i class="far fa-star star-icon"></i>
+                                                   <i class="far fa-star star-icon"></i>
+                                                </div>
+                                           </div>
+                                       </div>
+                                       <p class="mt-2">حس خوب و عالی خرید در فروشگاه اینترنتی کارن راتجربه کردم</p>
+                                   </div>
+                               </div>
+                            </section>
+                        </section>
+                      </div>
+                      <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                        <section class="review-wrapper mt-5 mb-5" id="review-wrapper">
+                            <section class="review-slider p-4 border border-2">
+                               <div class="wrapper-slider">
+                                   <div class="slide-item">
+                                       <i class="far fa-quote-right"></i>
+                                       <div class="user-item w-25">
+                                           <img src="./Assets/Imgs/person/person-2.jpg" alt="person">
+                                           <div class="user-info">
+                                               <h6>نازنین سلیمانی</h6>
+                                               <div class="stars mt-4 d-flex flex-nowrap justify-content-center align-items-center">
+                                                   <i class="far fa-star star-icon"></i>
+                                                   <i class="far fa-star star-icon"></i>
+                                                   <i class="far fa-star star-icon"></i>
+                                                   <i class="far fa-star star-icon"></i>
+                                                   <i class="far fa-star star-icon"></i>
+                                                </div>
+                                           </div>
+                                       </div>
+                                       <p class="mt-2">حس خوب و عالی خرید در فروشگاه اینترنتی کارن راتجربه کردم</p>
+                                   </div>
+                               </div>
+                            </section>
+                           </section>
+                      </div>
+                      <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                        <section class="review-wrapper mt-5 mb-5" id="review-wrapper">
+                            <section class="review-slider p-4 border border-2">
+                               <div class="wrapper-slider">
+                                   <div class="slide-item">
+                                       <i class="far fa-quote-right"></i>
+                                       <div class="user-item w-25">
+                                           <img src="./Assets/Imgs/person/person-3.jpg" alt="person">
+                                           <div class="user-info">
+                                               <h6>نازنین سلیمانی</h6>
+                                               <div class="stars mt-4 d-flex flex-nowrap justify-content-center align-items-center">
+                                                   <i class="far fa-star star-icon"></i>
+                                                   <i class="far fa-star star-icon"></i>
+                                                   <i class="far fa-star star-icon"></i>
+                                                   <i class="far fa-star star-icon"></i>
+                                                   <i class="far fa-star star-icon"></i>
+                                                </div>
+                                           </div>
+                                       </div>
+                                       <p class="mt-2">حس خوب و عالی خرید در فروشگاه اینترنتی کارن راتجربه کردم</p>
+                                   </div>
+                               </div>
+                            </section>
+                           </section>
+                      </div>
+                      <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                        <section class="review-wrapper mt-5 mb-5" id="review-wrapper">
+                            <section class="review-slider p-4 border border-2">
+                               <div class="wrapper-slider">
+                                   <div class="slide-item">
+                                       <i class="far fa-quote-right"></i>
+                                       <div class="user-item w-25">
+                                           <img src="./Assets/Imgs/person/person-4.jpg" alt="person">
+                                           <div class="user-info">
+                                               <h6>نازنین سلیمانی</h6>
+                                               <div class="stars mt-4 d-flex flex-nowrap justify-content-center align-items-center">
+                                                   <i class="far fa-star star-icon"></i>
+                                                   <i class="far fa-star star-icon"></i>
+                                                   <i class="far fa-star star-icon"></i>
+                                                   <i class="far fa-star star-icon"></i>
+                                                   <i class="far fa-star star-icon"></i>
+                                                </div>
+                                           </div>
+                                       </div>
+                                       <p class="mt-2">حس خوب و عالی خرید در فروشگاه اینترنتی کارن راتجربه کردم</p>
+                                   </div>
+                               </div>
+                            </section>
+                           </section>
+                      </div>
                     </div>
-                 </section>
-                </section>
+                    <div class="autoplay-progress">
+                      <svg viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20"></circle>
+                      </svg>
+                      <span></span>
+                    </div>
+                  </div>
             </div>
         </div>
      </div>
      <!-- END Review-Section -->
+     <!-- Start Order-Section -->
+     <div class="container">
+        <div class="row">
+            <div class="col">
+                <section class="order mt-5 mb-5 ">
+                <h4 class="text-center">همین الان سفارش بده</h4>
+                <h6 class="text-center mt-4">رایگان و سریع</h6>
+                  <div class="orders-form p-4 m-auto mt-5">
+                    <form action="" class=" w-100 m-auto p-5 border border-3 rounded-2">
+                        <div class="input-box d-flex flex-row-reverse flex-wrap justify-content-between">
+                            <div class="form-input">
+                                <span class="block font-12">نام </span>
+                                <input class="mt-3 w-100"  type="text" autofocus autocomplete name="user-name" id="user-name" placeholder="نام خود را وارد کنید">
+                            </div>
+                            <div class="form-input">
+                                <span class="block font-12">شماره </span>
+                                <input class="mt-3 w-100" type="number" name="user-number" id="user-number" placeholder="شماره خود را وارد کنید">
+                            </div>
+                        </div>
+                        <div class="input-box mt-4 d-flex flex-row-reverse flex-wrap justify-content-between">
+                            <div class="form-input">
+                                <span class="block font-12">سفارش </span>
+                                <input class="mt-3 w-100" type="text" name="user-order" id="user-order" placeholder="نام محصول خود را وارد کنید">
+                            </div>
+                            <div class="form-input">
+                                <span class="block font-12"> نام محصول</span>
+                                <input class="mt-3 w-100" type="text" name="user-product" id="user-product" placeholder="محصول خود را وارد کنید">
+                            </div>
+                        </div>
+                        <div class="input-box mt-4 d-flex flex-row-reverse flex-wrap justify-content-between">
+                            <div class="form-input">
+                                <span class="block font-12"> تعداد </span>
+                                <input class="mt-3 w-100 " type="number" name="Order-number" id="Order-number" placeholder="تعداد">
+                            </div>
+                            <div class="form-input">
+                                <span class="block font-12">  تاریخ</span>
+                                <input class="mt-3 w-100" type="datetime-local" name="datetime-local" id="datetime-local">
+                            </div>
+                        </div>
+                        <div class="input-box d-flex flex-row-reverse flex-wrap justify-content-between">
+                            <div class="form-input  mt-4 font-12 d-flex flex-column ">
+                                <span>  آدرس شما</span>
+                                 <textarea class="w-100" name="user-address" placeholder="آدرس خود را به طور کامل وارد کنید"  id="user-address" cols="30" rows="10"></textarea> 
+                               </div>
+                            <div class="form-input  mt-4 font-12 d-flex flex-column ">
+                                <span>  پیام شما</span>
+                                 <textarea class="w-100" name="user-message" placeholder="پیام" id="user-message" cols="30" rows="10"></textarea> 
+                            </div>
+                        </div>
+                        <div class="submit-box mt-5 d-flex justify-content-end">
+                            <button class="submit-btn px-2 py-3 rounded-2 text-white w-25" type="submit" value="ارسال">ارسال</button>
+                        </div>
+                    </form>
+                  </div>
+                </section>
+            </div>
+        </div>
+     </div>
+     <!-- END Order-Section -->
+     <!-- Start Footer-Section -->
+     <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <footer class="footer-wrapper mt-2">
+                    <div class="footer-content p-5 d-flex flex-wrap flex-row-reverse justify-content-between align-items-center">
+                        <div class="footer-content-item d-flex flex-column justify-content-start ">
+                            <h6>لوکیشن ها</h6>
+                            <a href="" class="text-right mt-2 text-dark">تهران</a>
+                            <a href="" class="text-right mt-2 text-dark">مشهد</a>
+                            <a href="" class="text-right mt-2 text-dark">تبریز</a>
+                            <a href="" class="text-right mt-2 text-dark">کرمان</a>
+                            <a href="" class="text-right mt-2 text-dark">اصفهان</a>
+                        </div>
+                        <div class="footer-content-item d-flex flex-column justify-content-end">
+                            <h6> لینک سریع</h6>
+                            <a href="" class="text-right mt-2 text-dark">خانه</a>
+                            <a href="" class="text-right mt-2 text-dark">فروشگاه</a>
+                            <a href="" class="text-right mt-2 text-dark">سفارش</a>
+                            <a href="" class="text-right mt-2 text-dark">درباره ما</a>
+                            <a href="" class="text-right mt-2 text-dark">ارتباط باما</a>
+                        </div>
+                        <div class="footer-content-item d-flex flex-column justify-content-end">
+                            <h6 class="text-right mb-2">اطلاعات تماس</h6>
+                            <a class="text-right mt-2 text-dark" href="tel:09339610841"title="برای  برقراری تماس کلیک کنید">۰۹۳۳-۹۶۱-۰۸۴۱</a>
+                            <a class="text-right mt-2 text-dark" href="tel:09302177630"title="برای  برقراری تماس کلیک کنید">۰۹۳۰۲۱۷۷۶۳۰</a>
+                            <a class="text-right mt-2 text-dark" href="mailto:somdr0889@gmail.com" title="برای ارسال ایمیل کلیک کنید">somdr0889@gmail.com</a>
+                            <a class="text-right mt-2 text-dark" href="mailto:yasaminomid9643@gmail.com" title="برای ارسال ایمیل کلیک کنید">yasaminomid9643@gmail.com</a>
+                            <a class="text-right mt-2 text-dark" href="">خراسان رضوی - مشهد مقدس -  شهید مفتح</a>
+                        </div>
+                        <div class="footer-content-item d-flex flex-column justify-content-end">
+                            <h6 class="text-right mb-3"> من را دنبال کنید</h6>
+                            <a href="" class="text-right mt-3 text-dark">اینستاگرام</a>
+                            <a href="" class="text-right mt-3 text-dark">تلگرام</a>
+                            <a href="" class="text-right mt-3 text-dark">فیسبوک</a>
+                            <a href="" class="text-right mt-3 text-dark">توئیتر</a>
+                        </div>
+                    </div>
+                     <div class="credit">copyright<i class="fa fa-copyright" aria-hidden="true"></i>2023 by <span>Samira Omidvar</span></div>
+                </footer>
+            </div>
+        </div>
+     </div>
+     <!-- END Footer-Section -->
 
 
 
@@ -346,22 +489,36 @@
 
 
 
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
+     <script>
 
+        //Autoplay progress slider
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 3500,
+            disableOnInteraction: false
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+          },
+          on: {
+            autoplayTimeLeft(s, time, progress) {
+              progressCircle.style.setProperty("--progress", 1 - progress);
+              progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+            }
+          }
+        });
+     </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 </body>
 </html>
