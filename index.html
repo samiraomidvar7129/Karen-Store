@@ -19,7 +19,7 @@
     <div class="container-fluid" id="header-navbar">
         <div class="row">
             <div class="col">
-                <div class="navbar m-auto mt-1  d-flex flex-row-reverse justify-content-center align-items-center">
+                <section class="navbar m-auto mt-1  d-flex flex-row-reverse justify-content-center align-items-center">
                     <div class="col-2">
                         <div class="logo-wrapper">
                             <img src="./Assets/Imgs/logo/shopping.jpg" alt="logo" class="logo">
@@ -28,7 +28,8 @@
                     <div class="col-8" >
                         <ul id="menu-wrapper" class="navbar-ul d-flex flex-row-reverse justify-content-center align-items-center">
                             <li class="d-inline-flex mt-0 mx-2  "><a class="text-gray current font-12 p-2 rounded-pill" href="">خانه</a></li>
-                            <li class="d-inline-flex mt-0 mx-2"><a class="text-gray font-12 p-2 rounded-pill" href="">فروشگاه</a></li>
+                            <li class="d-inline-flex mt-0 mx-2"><a class="text-gray font-12 p-2 rounded-pill" href="">سفارش</a></li>
+                            <li class="d-inline-flex mt-0 mx-2"><a class="text-gray font-12 p-2 rounded-pill" href="">گالری</a></li>
                             <li class="d-inline-flex mt-0 mx-2"><a class="text-gray font-12 p-2 rounded-pill" href="">درباره ما</a></li>
                             <li class="d-inline-flex mt-0 mx-2"><a class="text-gray font-12 p-2 rounded-pill" href="">تماس باما</a></li>
                         </ul>
@@ -40,7 +41,7 @@
                             <a class="mx-2" href=""><i class="fa fa-shopping-bag cart-icon"></i></a>
                         </span>
                    </div>
-                </div>
+                </section>
             </div>
         </div>
         <div class="row">
@@ -58,7 +59,7 @@
                         <div class="content_itemLeft_img ">
                             <img src="./Assets/Imgs/banner/portrait-woman.jpg" class=" rounded-circle" alt="">
                         </div>
-                      <div  class="content_itemLeft_socials ">
+                      <div class="content_itemLeft_socials ">
                         <ul class="itemLeft_socials_list">
                             <a class="social-links font-12" href="">اینستاگرام</a>
                             <a class="social-links font-12" href=""> تلگرام</a>
@@ -78,17 +79,28 @@
      <div class="container">
         <div class="row">
             <div class="col">
-                <section class="dishes d-flex flex-column justify-content-center align-items-center" id="dishes">
+                <section class="filter d-flex flex-column justify-content-center align-items-center" id="dishes">
                     <h3 class="mt-5">محصولات ما</h3>
                     <h5 class="mt-3">تمامی محصولات</h4>
-                    <div class="container-dishes mt-5 p-5 d-flex flex-wrap justify-content-around align-items-center custom-shadow">
-                        <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow
+                        <div class="w-100 mt-4 ">
+                           <div class="filter-btns d-flex flex-row-reverse justify-content-start">
+                            <button type="button" class="filter-btn inline-block font-12  mx-3 border border-secondary rounded-2 p-2" id="all">همه</button>
+                            <button type="button" class="filter-btn inline-block font-12  mx-3 border border-secondary rounded-2 p-2" id="feminine">زنانه</button>
+                            <button type="button" class="filter-btn inline-block font-12  mx-3 border border-secondary rounded-2 p-2" id="mens">مردانه</button>
+                            <button type="button" class="filter-btn inline-block font-12  mx-3 border border-secondary rounded-2 p-2" id="childish">بچگانه</button>
+                            <button type="button" class="filter-btn inline-block font-12  mx-3 border border-secondary rounded-2 p-2" id="baby">نوزادی</button>
+                           </div>
+                        </div>
+                    
+                    <div class="container-filter mt-4 p-5 d-flex flex-wrap justify-content-around align-items-center custom-shadow">
+                        <div class="discount p-1 bg-danger text-white font-12 position-absolute top-0 end-0 mt-2">50%</div>
+                        <div class="container-filter-item all new mt-2 mb-5 pt-3 pb-3 custom-shadow
                         d-flex flex-column justify-content-around align-items-center">
                            <div class="rating w-100 d-flex  justify-content-around align-items-center ">
                             <span><a href="" class="far fa-heart bg-purple"></a></span>
                             <span><a href="" class="far fa-eye bg-purple"></a></span>
                            </div>
-                             <div class="dishes-item_img mt-2">
+                             <div class="filter-item_img mt-2">
                                 <img src="./Assets/Imgs/posts/img-1.jpg" alt="">
                                 <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
                              </div>
@@ -110,13 +122,13 @@
                                 <a href="" class="text-white" >افزودن به سبد</a>
                              </div>
                         </div>
-                        <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow
+                        <div class="container-filter-item  all feminine mt-2 mb-5 pt-3 pb-3 custom-shadow
                         d-flex flex-column justify-content-around align-items-center">
                            <div class="rating w-100 d-flex  justify-content-around align-items-center ">
                             <span><a href="" class="far fa-heart bg-purple"></a></span>
                             <span><a href="" class="far fa-eye bg-purple"></a></span>
                            </div>
-                             <div class="dishes-item_img mt-2">
+                             <div class="filter-item_img mt-2">
                                 <img src="./Assets/Imgs/posts/img-1.jpg" alt="">
                                 <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
                              </div>
@@ -138,13 +150,13 @@
                                 <a href="" class="text-white" >افزودن به سبد</a>
                              </div>
                         </div>
-                        <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow
+                        <div class="container-filter-item all mens mt-2 mb-5 pt-3 pb-3 custom-shadow
                         d-flex flex-column justify-content-around align-items-center">
                            <div class="rating w-100 d-flex  justify-content-around align-items-center ">
                             <span><a href="" class="far fa-heart bg-purple"></a></span>
                             <span><a href="" class="far fa-eye bg-purple"></a></span>
                            </div>
-                             <div class="dishes-item_img mt-2">
+                             <div class="filter-item_img mt-2">
                                 <img src="./Assets/Imgs/posts/img-1.jpg" alt="">
                                 <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
                              </div>
@@ -166,13 +178,13 @@
                                 <a href="" class="text-white" >افزودن به سبد</a>
                              </div>
                         </div>
-                        <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow
+                        <div class="container-filter-item all childish mt-2 mb-5 pt-3 pb-3 custom-shadow
                         d-flex flex-column justify-content-around align-items-center">
                            <div class="rating w-100 d-flex  justify-content-around align-items-center ">
                             <span><a href="" class="far fa-heart bg-purple"></a></span>
                             <span><a href="" class="far fa-eye bg-purple"></a></span>
                            </div>
-                             <div class="dishes-item_img mt-2">
+                             <div class="filter-item_img mt-2">
                                 <img src="./Assets/Imgs/posts/img-1.jpg" alt="">
                                 <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
                              </div>
@@ -194,13 +206,13 @@
                                 <a href="" class="text-white" >افزودن به سبد</a>
                              </div>
                         </div>
-                        <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow
+                        <div class="container-filter-item all baby mt-2 mb-5 pt-3 pb-3 custom-shadow
                         d-flex flex-column justify-content-around align-items-center">
                            <div class="rating w-100 d-flex  justify-content-around align-items-center ">
                             <span><a href="" class="far fa-heart bg-purple"></a></span>
                             <span><a href="" class="far fa-eye bg-purple"></a></span>
                            </div>
-                             <div class="dishes-item_img mt-2">
+                             <div class="filter-item_img mt-2">
                                 <img src="./Assets/Imgs/posts/img-1.jpg" alt="">
                                 <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
                              </div>
@@ -222,13 +234,13 @@
                                 <a href="" class="text-white" >افزودن به سبد</a>
                              </div>
                         </div>
-                        <div class="container-dishes-item mt-2 mb-5 pt-3 pb-3 custom-shadow
+                        <div class="container-filter-item all new mt-2 mb-5 pt-3 pb-3 custom-shadow
                         d-flex flex-column justify-content-around align-items-center">
                            <div class="rating w-100 d-flex  justify-content-around align-items-center ">
                             <span><a href="" class="far fa-heart bg-purple"></a></span>
                             <span><a href="" class="far fa-eye bg-purple"></a></span>
                            </div>
-                             <div class="dishes-item_img mt-2">
+                             <div class="filter-item_img mt-2">
                                 <img src="./Assets/Imgs/posts/img-1.jpg" alt="">
                                 <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
                              </div>
@@ -249,7 +261,119 @@
                              <div class="add-cart p-2 mt-4 w-75  text-center bg-blueSky">
                                 <a href="" class="text-white" >افزودن به سبد</a>
                              </div>
-                        </div>    
+                        </div>
+                        <div class="container-filter-item  all feminine mt-2 mb-5 pt-3 pb-3 custom-shadow
+                        d-flex flex-column justify-content-around align-items-center">
+                           <div class="rating w-100 d-flex  justify-content-around align-items-center ">
+                            <span><a href="" class="far fa-heart bg-purple"></a></span>
+                            <span><a href="" class="far fa-eye bg-purple"></a></span>
+                           </div>
+                             <div class="filter-item_img mt-2">
+                                <img src="./Assets/Imgs/posts/img-1.jpg" alt="">
+                                <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
+                             </div>
+                             <div class="stars mt-5">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star-half-alt"></i>
+                             </div>
+                             <div class="product-price mt-4 d-flex flex-column justify-content-center align-items-center ">
+                                <span class="text-success ">۴۵,۰۰۰,۰۰۰<span  class="text-danger px-2">تومان</span></span>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <span class="font-12 mx-2 color-greenYellow">۸۶٪<span class="text-dark px-2 ">رضایت</span> </span>
+                                    <span class="font-12 color-gold">۳۰۵<span class="text-dark px-2 ">فروش</span> </span>
+                                </div>
+                             </div>
+                             <div class="add-cart p-2 mt-4 w-75  text-center bg-blueSky">
+                                <a href="" class="text-white" >افزودن به سبد</a>
+                             </div>
+                        </div>
+                        <div class="container-filter-item all mens mt-2 mb-5 pt-3 pb-3 custom-shadow
+                        d-flex flex-column justify-content-around align-items-center">
+                           <div class="rating w-100 d-flex  justify-content-around align-items-center ">
+                            <span><a href="" class="far fa-heart bg-purple"></a></span>
+                            <span><a href="" class="far fa-eye bg-purple"></a></span>
+                           </div>
+                             <div class="filter-item_img mt-2">
+                                <img src="./Assets/Imgs/posts/img-1.jpg" alt="">
+                                <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
+                             </div>
+                             <div class="stars mt-5">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star-half-alt"></i>
+                             </div>
+                             <div class="product-price mt-4 d-flex flex-column justify-content-center align-items-center ">
+                                <span class="text-success ">۴۵,۰۰۰,۰۰۰<span  class="text-danger px-2">تومان</span></span>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <span class="font-12 mx-2 color-greenYellow">۸۶٪<span class="text-dark px-2 ">رضایت</span> </span>
+                                    <span class="font-12 color-gold">۳۰۵<span class="text-dark px-2 ">فروش</span> </span>
+                                </div>
+                             </div>
+                             <div class="add-cart p-2 mt-4 w-75  text-center bg-blueSky">
+                                <a href="" class="text-white" >افزودن به سبد</a>
+                             </div>
+                        </div>
+                        <div class="container-filter-item all childish mt-2 mb-5 pt-3 pb-3 custom-shadow
+                        d-flex flex-column justify-content-around align-items-center">
+                           <div class="rating w-100 d-flex  justify-content-around align-items-center ">
+                            <span><a href="" class="far fa-heart bg-purple"></a></span>
+                            <span><a href="" class="far fa-eye bg-purple"></a></span>
+                           </div>
+                             <div class="filter-item_img mt-2">
+                                <img src="./Assets/Imgs/posts/img-1.jpg" alt="">
+                                <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
+                             </div>
+                             <div class="stars mt-5">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star-half-alt"></i>
+                             </div>
+                             <div class="product-price mt-4 d-flex flex-column justify-content-center align-items-center ">
+                                <span class="text-success ">۴۵,۰۰۰,۰۰۰<span  class="text-danger px-2">تومان</span></span>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <span class="font-12 mx-2 color-greenYellow">۸۶٪<span class="text-dark px-2 ">رضایت</span> </span>
+                                    <span class="font-12 color-gold">۳۰۵<span class="text-dark px-2 ">فروش</span> </span>
+                                </div>
+                             </div>
+                             <div class="add-cart p-2 mt-4 w-75  text-center bg-blueSky">
+                                <a href="" class="text-white" >افزودن به سبد</a>
+                             </div>
+                        </div>
+                        <div class="container-filter-item all baby mt-2 mb-5 pt-3 pb-3 custom-shadow
+                        d-flex flex-column justify-content-around align-items-center">
+                           <div class="rating w-100 d-flex  justify-content-around align-items-center ">
+                            <span><a href="" class="far fa-heart bg-purple"></a></span>
+                            <span><a href="" class="far fa-eye bg-purple"></a></span>
+                           </div>
+                             <div class="filter-item_img mt-2">
+                                <img src="./Assets/Imgs/posts/img-1.jpg" alt="">
+                                <h6 class="mt-3 text-center">ژاکت زمستانی</h6>
+                             </div>
+                             <div class="stars mt-5">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star-half-alt"></i>
+                             </div>
+                             <div class="product-price mt-4 d-flex flex-column justify-content-center align-items-center ">
+                                <span class="text-success ">۴۵,۰۰۰,۰۰۰<span  class="text-danger px-2">تومان</span></span>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <span class="font-12 mx-2 color-greenYellow">۸۶٪<span class="text-dark px-2 ">رضایت</span> </span>
+                                    <span class="font-12 color-gold">۳۰۵<span class="text-dark px-2 ">فروش</span> </span>
+                                </div>
+                             </div>
+                             <div class="add-cart p-2 mt-4 w-75  text-center bg-blueSky">
+                                <a href="" class="text-white" >افزودن به سبد</a>
+                             </div>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -388,7 +512,7 @@
                         <div class="input-box d-flex flex-row-reverse flex-wrap justify-content-between">
                             <div class="form-input">
                                 <span class="block font-12">نام </span>
-                                <input class="mt-3 w-100"  type="text" autofocus autocomplete name="user-name" id="user-name" placeholder="نام خود را وارد کنید">
+                                <input class="mt-3 w-100"  type="text"  autocomplete name="user-name" id="user-name" placeholder="نام خود را وارد کنید">
                             </div>
                             <div class="form-input">
                                 <span class="block font-12">شماره </span>
@@ -473,7 +597,7 @@
                             <a href="" class="text-right mt-3 text-dark">توئیتر</a>
                         </div>
                     </div>
-                     <div class="credit">copyright<i class="fa fa-copyright" aria-hidden="true"></i>2023 by <span>Samira Omidvar</span></div>
+                     <div class="credit d-flex justify-content-center align-items-center mt-2 pb-2 font-12">copyright<i class="fa fa-copyright mx-1" aria-hidden="true"></i>2023 by <span class="mx-2 border border-2 rounded-2 p-2"><a href="https://www.github.com/samiraomidvar_7129">Samira-Omidvar</a> </span></div>
                 </footer>
             </div>
         </div>
@@ -490,7 +614,7 @@
 
 
      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
+      <script src="./Assets/Js/Scripts.js"></script>
      <script>
 
         //Autoplay progress slider

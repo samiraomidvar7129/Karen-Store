@@ -32,6 +32,7 @@
 }
 html,body{
     scroll-behavior: smooth;
+    position: relative;
 }
 ol,ul,li{
     list-style: none;

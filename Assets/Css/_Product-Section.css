@@ -1,13 +1,50 @@
 
-.container-dishes {
+.container-filter {
     width: 100%;
     height: auto;
+    position: relative;
 }
-.container-dishes-item{
+.container-filter-item{
     height: auto;
-    flex-basis: 300px;
+    flex-basis: 250px;
 }
-.dishes-item_img{
+.filter-item_img{
     width: 200px;
     height: 200px;
+}
+.filter-item_img img{
+    transition: transform 0.2s ease-in-out;
+}
+.filter-item_img:hover img{
+    transform: scale(1.1);
+    margin-top: 12px;
+    transition: all 0.5s ease-in-out;
+
+}
+.filter-btn {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.filter-btn::after{
+    content: '';
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 0;
+    background-color: red;
+    transition: all 0.2s ease-in-out;
+}
+
+.filter-btn:hover::after{
+    width: 100%;
+}
+.active-btn{
+    background-color: blue;
+}
+.discount{
+    width: 40px;
+    z-index: 1;
 }
