@@ -4,13 +4,25 @@
     height: auto;
     position: relative;
 }
-.container-filter-item{
+.filter-item{
     height: auto;
-    flex-basis: 250px;
+    flex-basis: 200px;
+    animation:  fadeIn 1s;
 }
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 .filter-item_img{
     width: 200px;
     height: 200px;
+    overflow: hidden;
 }
 .filter-item_img img{
     transition: transform 0.2s ease-in-out;
@@ -21,6 +33,9 @@
     transition: all 0.5s ease-in-out;
 
 }
+.active-btn{
+  color: rgb(232, 138, 23);
+}
 .filter-btn {
     position: relative;
     transition: all 0.2s ease-in-out;
@@ -29,7 +44,7 @@
 .filter-btn::after{
     content: '';
     position: absolute;
-    top: 110%;
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     height: 2px;
@@ -41,10 +56,11 @@
 .filter-btn:hover::after{
     width: 100%;
 }
-.active-btn{
-    background-color: blue;
-}
 .discount{
     width: 40px;
     z-index: 1;
 }
+.stars a.active{
+    color: gold;
+}
+
