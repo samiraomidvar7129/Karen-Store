@@ -3,101 +3,85 @@
     
       {
         "id": "1",
-        "Name": "پلیور بافت یقه اسکی",
+        "name": "پلیور بافت یقه اسکی",
         "Code": " 6534",
-        "Price":"45-000-000",
-        "ImageUrl": "../Imgs/Posts/img-1.jpg",
+        "Price":"450000",
+        "ImageUrl": "Assets/Imgs/posts/img-1.jpg",
         "sale": "350  ",
         "Satisfaction":"50%"
       },
       {
         "id": "2",
-        "Name": "پلیور بافت یقه اسکی",
+        "name": "  شالگردن ",
         "Code": " 6534",
-        "ImageUrl": "../Imgs/Posts/img-2.jpg",
+        "Price":"450000",
+        "ImageUrl": "Assets/Imgs/posts/img-4.jpg",
         "sale": "535  ",
         "Satisfaction":"47%"
       },
       {
         "id": "3",
-        "Name": "پلیور بافت یقه اسکی",
+        "name": " بافت  ",
         "Code": " 6534",
-        "ImageUrl": "../Imgs/Posts/img-3.jpg",
+        "Price":"20000",
+        "ImageUrl": "Assets/Imgs/posts/img-3.jpg",
         "sale": "178  ",
         "Satisfaction":"84%"
       },
       {
         "id": "4",
-        "Name": "پلیور بافت یقه اسکی",
+        "name": "پلیور بافت  ",
         "Code": " 6534",
-        "ImageUrl": "../Imgs/Posts/img-4.jpg",
+        "ImageUrl": "Assets/Imgs/posts/img-4.jpg",
         "sale": "822  ",
+        "Price":"450000",
         "Satisfaction":"100%"
       },
       {
         "id": "5",
-        "Name": "پلیور بافت یقه اسکی",
+        "name": "پلیور بافت  ",
         "Code": " 6534",
-        "ImageUrl": "../Imgs/Posts/img-5.jpg",
-        "sale": "230  ",
-        "Satisfaction":"76%"
+        "ImageUrl": "Assets/Imgs/posts/img-4.jpg",
+        "sale": "822  ",
+        "Price":"450000",
+        "Satisfaction":"100%"
       },
       {
         "id": "6",
-        "Name": "پلیور بافت یقه اسکی",
+        "name": "پلیور بافت  ",
         "Code": " 6534",
-        "ImageUrl": "../Imgs/Posts/img-6.jpg",
-        "sale": "455  ",
-        "Satisfaction":"93%"
-      },
-      {
+        "ImageUrl": "Assets/Imgs/posts/img-4.jpg",
+        "sale": "822  ",
+        "Price":"450000",
+        "Satisfaction":"100%"
+      },   {
         "id": "7",
-        "Name": "پلیور بافت یقه اسکی",
+        "name": "پلیور بافت  ",
         "Code": " 6534",
-        "ImageUrl": "../Imgs/Posts/img-7.jpg",
-        "sale": "765  ",
+        "ImageUrl": "Assets/Imgs/posts/img-4.jpg",
+        "sale": "822  ",
+        "Price":"450000",
         "Satisfaction":"100%"
       },
       {
         "id": "8",
-        "Name": "پلیور بافت یقه اسکی",
+        "name": "پلیور بافت  ",
         "Code": " 6534",
-        "ImageUrl": "../Imgs/Posts/img-8.jpg",
-        "sale": "920  ",
-        "Satisfaction":"65%"
+        "ImageUrl": "Assets/Imgs/posts/img-4.jpg",
+        "sale": "822  ",
+        "Price":"450000",
+        "Satisfaction":"100%"
       },
       {
-        "id": "9",
-        "Name": "پلیور بافت یقه اسکی",
+        "id": "4",
+        "name": "پلیور بافت  ",
         "Code": " 6534",
-        "ImageUrl": "../Imgs/Posts/img-9.jpg",
-        "sale": "630  ",
-        "Satisfaction":"25%"
-      },
-      {
-        "id": "10",
-        "Name": "پلیور بافت یقه اسکی",
-        "Code": " 6534",
-        "ImageUrl": "../Imgs/Posts/img-10.jpg",
-        "sale": "400  ",
-        "Satisfaction":"86%"
-      },
-      {
-        "id": "11",
-        "Name": "پلیور بافت یقه اسکی",
-        "Code": " 6534",
-        "ImageUrl": "../Imgs/Posts/img-11.jpg",
-        "sale": "345  ",
-        "Satisfaction":"94%"
-      },
-      {
-        "id": "12",
-        "Name": "پلیور بافت یقه اسکی",
-        "Code": " 6534",
-        "ImageUrl": "../Imgs/Posts/img-12.jpg",
-        "sale": "500",
+        "ImageUrl": "Assets/Imgs/posts/img-4.jpg",
+        "sale": "822  ",
+        "Price":"450000",
         "Satisfaction":"100%"
       }
+   
       
 
     ]
