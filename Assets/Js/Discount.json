@@ -1,0 +1,10 @@
+
+{
+    "discount_data":  [
+{"group-id":0,"group-name":"بافت یقه اسکی","discount":2},
+{"group-id":1,"group-name":"بافت یقه اسکی","discount":50},
+{"group-id":2,"group-name":"بافت یقه اسکی","discount":30},
+{"group-id":3,"group-name":"بافت یقه اسکی","discount":25},
+{"group-id":4,"group-name":"بافت یقه اسکی","discount":60}
+    ]
+}

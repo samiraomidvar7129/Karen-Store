@@ -3,82 +3,82 @@
     
       {
         "id": "1",
-        "name": "پلیور بافت یقه اسکی",
+        "name": "پلیور بافت  مدادرنگی",
         "Code": " 6534",
-        "Price":"450000",
+        "Price":"۴۵۰,۰۰۰",
         "ImageUrl": "Assets/Imgs/posts/img-1.jpg",
         "sale": "350  ",
         "Satisfaction":"50%"
       },
       {
         "id": "2",
-        "name": "  شالگردن ",
+        "name": "  پلیور بافت مخمل ",
         "Code": " 6534",
-        "Price":"450000",
-        "ImageUrl": "Assets/Imgs/posts/img-4.jpg",
+        "Price":"۹۸۰,۰۰۰",
+        "ImageUrl": "Assets/Imgs/posts/img-2.jpg",
         "sale": "535  ",
         "Satisfaction":"47%"
       },
       {
         "id": "3",
-        "name": " بافت  ",
+        "name": " پلیور بافت بابونه  ",
         "Code": " 6534",
-        "Price":"20000",
+        "Price":"۳۲۰,۰۰۰",
         "ImageUrl": "Assets/Imgs/posts/img-3.jpg",
         "sale": "178  ",
         "Satisfaction":"84%"
       },
       {
         "id": "4",
-        "name": "پلیور بافت  ",
+        "name": " بافت ساده مچ دار  ",
         "Code": " 6534",
         "ImageUrl": "Assets/Imgs/posts/img-4.jpg",
-        "sale": "822  ",
-        "Price":"450000",
+        "sale": "78  ",
+        "Price":"۱۷۸,۰۰۰",
         "Satisfaction":"100%"
       },
       {
         "id": "5",
-        "name": "پلیور بافت  ",
+        "name": "  یقه اسکی زنجیری  ",
         "Code": " 6534",
-        "ImageUrl": "Assets/Imgs/posts/img-4.jpg",
-        "sale": "822  ",
-        "Price":"450000",
+        "ImageUrl": "Assets/Imgs/posts/img-5.jpg",
+        "sale": "63  ",
+        "Price":"۶۵۰۰۰۰",
         "Satisfaction":"100%"
       },
       {
         "id": "6",
-        "name": "پلیور بافت  ",
+        "name": "  شکت فوتر ساده  ",
         "Code": " 6534",
-        "ImageUrl": "Assets/Imgs/posts/img-4.jpg",
-        "sale": "822  ",
-        "Price":"450000",
+        "ImageUrl": "Assets/Imgs/posts/img-6.jpg",
+        "sale": "160  ",
+        "Price":"۸۳۰,۰۰۰",
         "Satisfaction":"100%"
       },   {
         "id": "7",
-        "name": "پلیور بافت  ",
+        "name": " بافت  یقه گرد      ",
         "Code": " 6534",
-        "ImageUrl": "Assets/Imgs/posts/img-4.jpg",
-        "sale": "822  ",
-        "Price":"450000",
+        "ImageUrl": "Assets/Imgs/posts/img-7.jpg",
+        "sale": "250  ",
+        "Price":"۲۵۰,۰۰۰",
         "Satisfaction":"100%"
       },
       {
         "id": "8",
-        "name": "پلیور بافت  ",
+        "name": "    هودی بافت کلاهدار",
         "Code": " 6534",
-        "ImageUrl": "Assets/Imgs/posts/img-4.jpg",
-        "sale": "822  ",
-        "Price":"450000",
+        "ImageUrl": "Assets/Imgs/posts/img-8.jpg",
+        "sale": "90  ",
+        "Price":"۷۴۰,۰۰۰",
         "Satisfaction":"100%"
       },
       {
         "id": "4",
-        "name": "پلیور بافت  ",
+        "name": " بافت زنجیری آلبالو  ",
         "Code": " 6534",
-        "ImageUrl": "Assets/Imgs/posts/img-4.jpg",
-        "sale": "822  ",
-        "Price":"450000",
+        "ImageUrl": "Assets/Imgs/posts/img-9.jpg",
+        "sale": "500  ",
+        "Price":"۵۹۷۰,۰۰۰",
         "Satisfaction":"100%"
       }
    

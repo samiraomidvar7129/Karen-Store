@@ -1,3 +1,4 @@
+
 //Get Data With Ajax , Api-------------
 
 var myData;
@@ -40,11 +41,14 @@ function createMainBox(data) {
 
     mainBox.appendChild(mainBoxElem);
   }
+}
+
 
 
 function createGroupBox(id,name,Price,ImageUrl,Satisfaction,sale) {
   
   let productList=document.getElementById('product-list');
+  productList.style.marginTop="50px"
 
   let filterItem=document.createElement('div')
   filterItem.classList.add('filter-item')
@@ -54,13 +58,16 @@ function createGroupBox(id,name,Price,ImageUrl,Satisfaction,sale) {
   rating.classList.add('rating')
 
   let spanHeart=document.createElement('span')
-  let heartLink=document.createElement('a')
-  heartLink.classList.add('fa-heart')
-  heartLink.innerHTML="hert"
+  let heartLink=document.createElement('i')
+  heartLink.setAttribute('class','far fa-heart')
+
+  spanHeart.append(heartLink)
 
   let spanEye=document.createElement('span')
-  let eyeLink=document.createElement('a')
-  eyeLink.classList.add('fa-eye')
+  let eyeLink=document.createElement('i')
+  eyeLink.setAttribute('class','far fa-eye')
+
+  spanEye.append(eyeLink)
 
   rating.append( spanHeart , spanEye)
 
@@ -74,6 +81,7 @@ function createGroupBox(id,name,Price,ImageUrl,Satisfaction,sale) {
 
   filterItemimg.append(img)
 
+  
 
   let H6Name=document.createElement('h6');
   H6Name.innerText= name;
@@ -81,6 +89,7 @@ function createGroupBox(id,name,Price,ImageUrl,Satisfaction,sale) {
   let spanPrice=document.createElement('span');
   let priceText=document.createTextNode("تومان");
   spanPrice.innerText=Price;
+  spanPrice.style.color="green"
 
   spanPrice.append(priceText);
 
@@ -89,38 +98,61 @@ function createGroupBox(id,name,Price,ImageUrl,Satisfaction,sale) {
  SatisfactionDiv.classList.add('SatisfactionDiv');
 
  let saleSpan=document.createElement('span');
-let saleText=document.createTextNode('فروش')
+let saleText=document.createTextNode('رضایت')
  saleSpan.innerText=sale;
+ saleSpan.style.color="goldenrod";
   saleSpan.append(saleText)
 
  let SatisfactionSpan=document.createElement('span');
  SatisfactionSpan.classList.add('SatisfactionSpan')
- let SatisfactionText=document.createTextNode("رضایت")
+ let SatisfactionText=document.createTextNode("فروش")
  SatisfactionSpan.innerText=Satisfaction;
+ SatisfactionSpan.style.color="red";
+ 
+
+ //Creating the parents of the stars
+
+let starsContainer=document.createElement('div');
+starsContainer.setAttribute('class','stars-container');
+
+//  The number of stars
+const starCount = 5;
+
+//Create Stars
+
+for (let i = 0; i < starCount; i++) {
+  const star = document.createElement('i');
+  star.setAttribute('class','far fa-star');
+  star.setAttribute('dataset',i + 1);
+  starsContainer.append(star);
+}
+
 
  SatisfactionSpan.append(SatisfactionText)
 
  SatisfactionDiv.append(saleSpan,SatisfactionSpan);
 
+ 
+
  let addCart=document.createElement('div');
  addCart.classList.add('add-cart');
 
- let basketBtn=document.createElement('a');
- basketBtn.setAttribute('href',"basket.html")
- let basketBtnText=document.createTextNode('افزودن به سبد')
- basketBtn.classList.add('basket-btn');
+ let detailBtn=document.createElement('a');
+ detailBtn.setAttribute('href',"details.html?group="+ id)
+ let detailBtnText=document.createTextNode(' جزئیات ')
+ detailBtn.classList.add('basket-btn');
 
- basketBtn.append(basketBtnText)
+ detailBtn.append(detailBtnText)
 
- addCart.append(basketBtn);
+ addCart.append(detailBtn);
 
- filterItem.append(rating,filterItemimg,H6Name, spanPrice,SatisfactionDiv,addCart)
+ filterItem.append(rating,filterItemimg,H6Name, spanPrice,SatisfactionDiv,starsContainer,addCart)
 
 productList.append(filterItem)
-
-console.log(productList);
 
 return productList;
 
 }
-}
+
+// Star Rating
+

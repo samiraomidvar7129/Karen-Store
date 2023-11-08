@@ -1,0 +1,7 @@
+.discount-content{
+    background-image: url('/Assets/Imgs/discount-banner/discount-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+}
