@@ -13,7 +13,6 @@
     <!-- Custom Style.css File link -->
     <link rel="stylesheet" href="./Assets/Css/style.css">
 </head>
-
 <body>
 
 
@@ -23,25 +22,39 @@
         <div class="row">
             <div class="col">
                 <section class="navbar m-auto mt-1  d-flex flex-row-reverse justify-content-center align-items-center">
-                    <div class="col-2">
+                    <div class="col-2 d-none d-md-block">
                         <div class="logo-wrapper">
                             <img src="./Assets/Imgs/logo/shopping.jpg" alt="logo" class="logo">
                         </div>
                     </div>
                     <div class="col-8" >
-                        <ul id="menu-wrapper" class="navbar-ul d-flex flex-row-reverse justify-content-center align-items-center">
-                            <li class="d-inline-flex mt-0 mx-2"><a class="text-gray current font-12 p-2 rounded-pill" href="">خانه</a></li>
-                            <li class="d-inline-flex mt-0 mx-2"><a class="text-gray font-12 p-2 rounded-pill" href="#order">سفارش</a></li>
-                            <li class="d-inline-flex mt-0 mx-2"><a class="text-gray font-12 p-2 rounded-pill" href="#shop">گالری</a></li>
-                            <li class="d-inline-flex mt-0 mx-2"><a class="text-gray font-12 p-2 rounded-pill" href="#comment">نظرات</a></li>
-                            <li class="d-inline-flex mt-0 mx-2"><a class="text-gray font-12 p-2 rounded-pill" href="">درباره ما</a></li>
-                            <li class="d-inline-flex mt-0 mx-2"><a class="text-gray font-12 p-2 rounded-pill" href="">تماس باما</a></li>
+                        <ul id="menu-wrapper" class="navbar-ul">
+                            <li class=" mt-0 mx-2"><a class="text-gray current font-12 p-2 rounded-pill" href="">خانه</a></li>
+                            <li class=" mt-0 mx-2"><a class="text-gray font-12 p-2 rounded-pill" href="#order">سفارش</a></li>
+                            <li class=" mt-0 mx-2"><a class="text-gray font-12 p-2 rounded-pill" href="#shop">گالری</a></li>
+                            <li class=" mt-0 mx-2"><a class="text-gray font-12 p-2 rounded-pill" href="#comment">نظرات</a></li>
+                            <li class=" mt-0 mx-2"><a class="text-gray font-12 p-2 rounded-pill" href="">درباره ما</a></li>
+                            <li class=" mt-0 mx-2"><a class="text-gray font-12 p-2 rounded-pill" href="">تماس باما</a></li>
                         </ul>
+
+                        <!-- Hamburger menu for mobile -->
+                        <div class="hamburger">
+                            <div class="hamburger-icon">
+                                 <i class="fas fa-bars icon-bar   "></i>
+                            </div>
+                            <ul class="hamburger-menu-list">
+                                <li><a href="#">سفارش</a></li>
+                                <li><a href="#">گالری</a></li>
+                                <li><a href="#">نظرات</a></li>
+                                <li><a href="#">درباره ما</a></li>
+                                <li><a href="#">تماس باما</a></li>
+                            </ul>
+                        </div>
+                        <!-- Hamburger menu for mobile -->
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 ">
                         <span class="cart-icon_span d-flex justify-content-center align-items-center p-1 r">
                             <i class="far fa-search mx-2"></i>
-                            <i class="fa fa-bars mx-2" id="menu-bar" aria-hidden="true"></i>
                             <a class="mx-2" href=""><i class="fa fa-shopping-bag cart-icon"></i></a>
                         </span>
                    </div>
@@ -98,7 +111,13 @@
         <div class="row">
             <div class="col">
                 <section class="discount-content" >
-                    
+                    <h3 class=" text-countdown  text-white ">   پایان تخفیفات تا تاریخ </h3>
+                <div id="countdown">
+                    <span id="days">00</span> :
+                    <span id="hours">00</span>:
+                    <span id="minutes">00</span>:
+                    <span id="seconds">00</span>
+                </div>
                 </section>
             </div>
         </div>

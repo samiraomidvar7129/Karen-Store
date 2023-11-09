@@ -1,3 +1,5 @@
+
+
 var myData;
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -26,20 +28,84 @@ document.addEventListener("DOMContentLoaded", function () {
     
         const group =urlParams.get('group')  //return query string
 
-        for(const index in myData.doctors){
 
-         if(group === myData.doctors[index].id){
-            document.getElementById('doctor-title').innerHTML=myData.doctors[index].Name;
-            document.getElementById('doctor-Speciallity').innerHTML=myData.doctors[index].Speciallity;
-            document.querySelector('.state').innerHTML=myData.doctors[index].state;
-            document.querySelector('.doctor-address').innerHTML=myData.doctors[index].city;
-            document.getElementById('nezamCode').innerHTML=myData.doctors[index].NezamCode;
-            document.getElementById('doctor-image').setAttribute('src',myData.doctors[index].ImageUrl);
-            document.querySelector('.gifts').innerHTML=myData.doctors[index].gifts;
-            document.querySelector('.article').innerHTML=myData.doctors[index].articcles;
-            document.querySelector('.comments').innerHTML=myData.doctors[index].comments;
-            document.querySelector('.answers').innerHTML=myData.doctors[index].answers;
+        for(const index in myData.products){
+
+         if(group === myData.products[index].id){
+
+          let productInfoImg= document.querySelector('.product-info-img');
+           productInfoImg.setAttribute('src',myData.products[index].ImageUrl);
+         
+
+           document.querySelector('.product-info-name').innerHTML=myData.products[index].name;
+
+           document.querySelector('.product-info-price').innerHTML=myData.products[index].Price;
+          
+            // Show Product Types------
+
+           const sizes = myData.products[index].size;
+           var sizesList=document.querySelector('.product-types');
+           for (let i = 0; i < sizes.length; i++) {
+            const size =sizes[i].name;
+            const li = document.createElement('li');
+            li.textContent = size;
+            sizesList.append(li);
+            console.log(sizesList);
+           }
+
+          //btn plus------------------
+          document.getElementById('plus').addEventListener('click',()=>{
+            var number=Number(document.getElementById('numbers').value);
+            number++;
+            document.getElementById('numbers').value=number;
+          });
+           //btn minus----------------
+           document.getElementById('minus').addEventListener('click',()=>{
+            var number=Number(document.getElementById('numbers').value);
+            if(number > 1)
+            number--;
+            document.getElementById('numbers').value=number
+          });
+       
          }
+        }}
 
-        }
+
+
+
+     // Progress Bar-------------------------------------
+
+ var flag=true;
+
+ document.addEventListener('DOMContentLoaded',()=>{
+  if(flag){
+    var elements=document.getElementsByClassName('progress-bar');
+    var elements_value=document.getElementsByClassName('progress-value');
+    for(let i =0; i <elements.length;i++){
+      const elem=elements[i];
+      const value_elems=elements_value[i];
+
+      var data_to=Number(value_elems.getAttribute('data-to'));
+
+      console.log(data_to);
+
+      changeProgress(elem,value_elems,data_to)
     }
+    flag=false;
+  };
+  });
+
+ const changeProgress=(elem,value_elems,value)=>{
+  var i=0;
+  var interval=setInterval(function(){
+    if(i >=Number(value)){
+      clearInterval(interval)
+    }
+
+    elem.style.width=i + "%";
+    value_elems.innerHTML=i + "%";
+    i++
+  },10)
+
+   }
+

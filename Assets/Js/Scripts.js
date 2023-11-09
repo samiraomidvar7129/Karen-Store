@@ -1,3 +1,10 @@
+//  Hamburger Menu-----------------
+let hamburgerIcon=document.querySelector('.hamburger-icon');
+hamburgerIcon.addEventListener('click',()=>{
+  let hamburger_menu_list=document.querySelector('.hamburger-menu-list')
+  hamburger_menu_list.classList.toggle('active')
+})
+
 
 //Get Data With Ajax , Api-------------
 
@@ -6,26 +13,26 @@ var myData;
 document.addEventListener("DOMContentLoaded", function () {
   //step 1:
   var xhttp = new XMLHttpRequest();
+
   //step 2:
    
   var url="/Assets/Js/products.json";
   xhttp.open("GET", url);
+
   //step 3:
   xhttp.onreadystatechange = function () {
-
     if (this.readyState == 4 && this.status == 200) {
       var data =JSON.parse(xhttp.responseText);
-      createMainBox(data);
+      myData=data
+      createMainBox(myData)
     }
-  
   };
   xhttp.send();
 });
 
 
-function createMainBox(data) {
 
-  myData=data;
+const createMainBox =(myData) =>{
 
  var mainBox=document.querySelector("#container-filter");
 
@@ -43,9 +50,7 @@ function createMainBox(data) {
   }
 }
 
-
-
-function createGroupBox(id,name,Price,ImageUrl,Satisfaction,sale) {
+const createGroupBox =(id,name,Price,ImageUrl,Satisfaction,sale) =>{
   
   let productList=document.getElementById('product-list');
   productList.style.marginTop="50px"
@@ -73,15 +78,13 @@ function createGroupBox(id,name,Price,ImageUrl,Satisfaction,sale) {
 
 
 
-  let filterItemimg =document.createElement('div')//
+  let filterItemimg =document.createElement('div')
   filterItemimg.classList.add('filter-item_img')
 
-  let img=document.createElement('img')
+  let img=document.createElement('img');
   img.setAttribute('src',ImageUrl)
 
   filterItemimg.append(img)
-
-  
 
   let H6Name=document.createElement('h6');
   H6Name.innerText= name;
@@ -94,7 +97,7 @@ function createGroupBox(id,name,Price,ImageUrl,Satisfaction,sale) {
   spanPrice.append(priceText);
 
 
-  let SatisfactionDiv=document.createElement('div');//
+  let SatisfactionDiv=document.createElement('div');
  SatisfactionDiv.classList.add('SatisfactionDiv');
 
  let saleSpan=document.createElement('span');
@@ -154,5 +157,39 @@ return productList;
 
 }
 
-// Star Rating
 
+//  CountDown --------------------------------------------
+//  discount end date
+
+let discountEndDate=new Date(2023,10,20,23,59,59);
+
+let countDown=setInterval(()=>{
+
+  var nowDate=new  Date().getTime();
+  var timeRimaining=discountEndDate - nowDate;
+
+
+var days=Math.round(Math.floor(timeRimaining / (1000 * 60 * 60 * 24)));
+var hours=Math.round(Math.floor(timeRimaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes=Math.round(Math.floor(timeRimaining % (1000 * 60 * 60 )) / (1000 * 60 ));
+var seconds=Math.round(Math.floor(timeRimaining % (1000 * 60) / 1000));
+
+// Show Times in Elements
+
+document.getElementById('days').textContent=padNumber(days);
+document.getElementById('hours').textContent=padNumber(hours);
+document.getElementById('minutes').textContent=padNumber(minutes);
+document.getElementById('seconds').textContent=padNumber(seconds);
+
+if(timeRimaining <= 0){
+  clearInterval(countDown);
+
+  document.getElementById('countdown').textContent="تخفیف به پایان رسید"
+}
+},1000)
+
+
+
+const padNumber =(number)=>{
+  return (number < 10) ? "0" + number : number;
+}

@@ -18,7 +18,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <section class="navbar  bg-info m-auto mt-1  d-flex flex-row-reverse justify-content-center align-items-center">
+                <section id="navbar" class="navbar  bg-info m-auto mt-1  d-flex flex-row-reverse justify-content-center align-items-center">
                     <div class="col-2">
                         <div class="logo-wrapper">
                             <img src="./Assets/Imgs/logo/shopping.jpg" alt="logo" class="logo">
@@ -37,7 +37,6 @@
                     <div class="col-2">
                         <span class="cart-icon_span d-flex justify-content-center align-items-center p-1 r">
                             <i class="far fa-search mx-2"></i>
-                            <i class="fa fa-bars mx-2" id="menu-bar" aria-hidden="true"></i>
                             <a class="mx-2" href=""><i class="fa fa-shopping-bag cart-icon"></i></a>
                         </span>
                    </div>
@@ -52,15 +51,60 @@
 <div class="container-fluid mt-2">
     <div class="row">
         <div class="col">
-            <section class="detail-product bg-info">
+            <section class="detail-product ">
                 <h1 id="product-title"></h1>
 
                 <div class="main-product-menu">
-                <div class="product-info-parent">
-                    <div class="product-info-menu">
-                        <ul id="product-list">
-                            
-                        </ul>
+                <section>
+                    <div class="product-info-parent">
+                        <div class="product-info-menu">
+                            <div class="product-info-image">
+                               <img src="" class="product-info-img" alt="">
+                               <div class="child-images"></div>
+                            </div>
+                            <div class="product-info-content ">
+                                <h4 class="product-info-name"></h4>
+                                <h5 class="product-info-price my-4"></h5>
+                                <div class="product-types"></div>
+    
+                                <div class="addShopCart mt-5">
+                                    <div class="number">
+                                        <span id="plus">+</span>
+                                            <input type="number" id="numbers" data-zeros="true" value="1" min="1" max="20" >
+                                        <span id="minus">-</span>
+                                    </div>
+                
+                                    <a href="basket.html" class="btn-add">افزودن به سبد خرید</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </section>
+                 <!-- progress -->
+                <div class="progress">
+                    <div class="progress-box mt-2">
+                        <div class="progress-header">
+                            <div class="text-right">
+                                <p>رضایت مشتری</p>
+                            </div>
+                        </div>
+                        <div class="progress-bar" >
+                            <div class="progress-bar-fill"></div>
+                            <div class="progress-value" id="progress-Satisfaction" data-to="95" ></div>
+                        </div>
+                    </div>
+                    <div class="progress-box mt-2">
+                        <div class="progress-header">
+                            <div class="text-right">
+                                <p> فروش</p>
+                            </div>
+                        </div>
+                        <div class="progress-bar" >
+                            <div class="progress-bar-fill"></div>
+                            <div class="progress-value" id="progress-Sale" data-to="67" ></div>
+                        </div>
                     </div>
                 </div>
                 </div>
